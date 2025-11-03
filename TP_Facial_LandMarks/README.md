@@ -49,7 +49,7 @@ Para utilizar y probar esta aplicación en tu máquina local, sigue los siguient
 1.  **Clonar el repositorio:**
 
     ```bash
-    git clone [https://github.com/tu-usuario/facial-landmarks-app.git](https://github.com/tu-usuario/facial-landmarks-app.git)
+    git clone https://github.com/RaquelMallqui1/Tecnicas-de-Procesamiento-Digital-de-Imagenes.git
     cd facial-landmarks-app
     ```
 
@@ -88,8 +88,8 @@ Esto abrirá la aplicación web en tu navegador predeterminado (normalmente en `
 
 Para consultas o sugerencias relacionadas con la implementación del detector de landmarks faciales:
 
-Nombre: Raquel Mallqui Espinoza
-Email: 93854950@ifts24.edu.ar
+* **Nombre:** Raquel Malqui Espinoza
+* **Email:** 93854950@ifts24.edu.ar
 
 ### Licencia
 
