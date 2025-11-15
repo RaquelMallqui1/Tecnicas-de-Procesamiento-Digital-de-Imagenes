@@ -1,0 +1,19 @@
+# Configuration for Photo Colorization App
+# Based on DOCUMENTACION.md for user Claudia's needs
+
+# Replicate API settings
+replicate:
+  model: "cjwbw/deoldify"  # DeOldify model on Replicate
+  token_env: "REPLICATE_API_TOKEN"  # API token from environment variable
+
+# App settings
+app:
+  title: "Coloriza Tus Fotos Antiguas"
+  description: "Revive tus recuerdos familiares con colores naturales y realistas"
+  max_file_size: 5  # MB
+  supported_formats: ["jpg", "png", "jpeg"]
+
+# Processing settings
+processing:
+  timeout: 30  # seconds for API call
+  retries: 3

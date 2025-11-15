@@ -9,6 +9,6 @@ Seleccionando la opción "Detector de Landmarks":
 
 ## Análisis de expresiones
 
-Seleccionando la opción "Análisis de expresiones":í:
+Seleccionando la opción "Análisis de expresiones":
 
 ![Captura del primer paso](assets/Analisis_de_expresiones.jpg)
