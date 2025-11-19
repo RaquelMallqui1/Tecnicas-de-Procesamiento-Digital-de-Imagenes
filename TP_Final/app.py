@@ -43,7 +43,7 @@ except (FileNotFoundError, yaml.YAMLError) as e:
 # ==============================================
 # TITULO Y DESCRIPCIÓN
 # ==============================================
-st.title(config.get("app", {}).get("title", "Photo Colorization App"))
+st.title(config.get("app", {}).get("title", "Sistema Inteligente de Recuperación de Imágenes"))
 st.write(config.get("app", {}).get("description", "Revive tus recuerdos familiares"))
 
 # ==============================================

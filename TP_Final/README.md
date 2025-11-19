@@ -10,7 +10,7 @@
 
 Las fotografías familiares escaneadas de décadas pasadas están degradadas, tienen rasguños, carecen de nitidez y presentan un tinte sepia que disminuye su valor emocional y visual. Las herramientas de edición convencionales son complejas y no pueden reconstruir los detalles faciales perdidos.
 
-### Solución: Photo Colorization App
+### Solución: Sistema Inteligente de Recuperación de Imagenes
 
 Este sistema automatiza el proceso de restauración en tres fases principales:
 1.  **Limpieza y Super-resolución:** Elimina ruido y aumenta la nitidez de los rostros (GFPGAN / SwinIR).
