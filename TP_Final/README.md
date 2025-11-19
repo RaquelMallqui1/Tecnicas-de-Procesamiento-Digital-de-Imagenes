@@ -98,6 +98,6 @@ El proyecto aplica varios conceptos fundamentales de la materia:
 
 ## 8. 📝 Autor
 
-**[Tu Nombre Completo]** *Estudiante de Tecnicatura Superior en Ciencias de Datos e IA - IFTS 24* *Año: 2025*
+**Raquel Mallqui Espinoza** *Estudiante de Tecnicatura Superior en Ciencias de Datos e IA - IFTS 24* *Año: 2025*
 
-[Link a tu GitHub] | [Link a tu Portfolio Personal]
+https://github.com/RaquelMallqui1/Tecnicas-de-Procesamiento-Digital-de-Imagenes.git
