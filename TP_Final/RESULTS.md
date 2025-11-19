@@ -28,7 +28,7 @@ Prueba de consistencia en la colorización de vestimenta y detección de múltip
 
 | Original | Procesada |
 | :---: | :---: |
-| ![Original](assets/Foto_abuelos_Lu.jpg) | ![Procesada](assets/resultado_abuelos.jpg) |
+| ![Original](assets/Foto_abuelos_Lu.jpg) | ![Procesada](assets/resultado_abuelos.jpeg) |
 
 **📊 Métricas Cuantitativas:**
 * **SSIM:** *0.969* (Similitud estructural alta)
