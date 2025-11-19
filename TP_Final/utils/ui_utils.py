@@ -1,49 +1,41 @@
 import streamlit as st
 from PIL import Image
+import io
 
-def mostrar_imagenes_lado_a_lado(imagen1, imagen2, caption1="Original", caption2="Procesada"):
-    """
-    Muestra dos imágenes lado a lado en Streamlit.
-    """
+def display_images_side_by_side(original, processed, title1="Original", title2="Procesada"):
+    """Display two images side by side."""
     col1, col2 = st.columns(2)
     with col1:
-        st.image(imagen1, caption=caption1, use_column_width=True)
+        st.write(f"### {title1}")
+        st.image(original, use_column_width=True)
     with col2:
-        st.image(imagen2, caption=caption2, use_column_width=True)
+        st.write(f"### {title2}")
+        st.image(processed, use_column_width=True)
 
-def mostrar_spinner(texto="Procesando..."):
-    """
-    Muestra un spinner con texto personalizado.
-    """
-    return st.spinner(texto)
+def show_spinner(text="Procesando..."):
+    """Show a spinner."""
+    return st.spinner(text)
 
-def mostrar_exito(mensaje="¡Operación completada!"):
-    """
-    Muestra un mensaje de éxito.
-    """
-    st.success(mensaje)
+def show_success(message="¡Éxito!"):
+    """Show success message."""
+    st.success(message)
 
-def mostrar_error(mensaje="Ocurrió un error."):
-    """
-    Muestra un mensaje de error.
-    """
-    st.error(mensaje)
+def show_error(message="Error"):
+    """Show error message."""
+    st.error(message)
 
-def validar_imagen_subida(imagen, max_size_mb=5):
-    """
-    Valida que la imagen subida cumpla con los requisitos.
-    """
-    if imagen is None:
-        return False, "No se ha subido ninguna imagen."
+def create_download_button(image, filename="imagen.jpg", label="Descargar"):
+    """Create download button for image."""
+    buf = io.BytesIO()
+    image.save(buf, format='JPEG')
+    buf.seek(0)
+    st.download_button(label=label, data=buf, file_name=filename, mime="image/jpeg")
 
-    # Check size
-    size_mb = len(imagen.getvalue()) / (1024 * 1024)
-    if size_mb > max_size_mb:
-        return False, f"La imagen es demasiado grande ({size_mb:.2f} MB). Máximo {max_size_mb} MB."
+def display_metadata(metadata_dict):
+    """Display metadata in a nice format."""
+    for key, value in metadata_dict.items():
+        st.write(f"**{key}:** {value}")
 
-    # Check format
-    allowed_formats = ['jpg', 'jpeg', 'png']
-    if imagen.type.split('/')[-1].lower() not in allowed_formats:
-        return False, f"Formato no soportado. Use: {', '.join(allowed_formats)}."
-
-    return True, "Imagen válida."
+def log_message(message):
+    """Log a message in the app."""
+    st.write(f"🔍 {message}")
